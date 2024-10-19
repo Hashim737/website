@@ -3,60 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malik H Khan - Portfolio</title>
+    <title>Your Name - Portfolio</title>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+        /* Global Styles */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
         header {
-            background-color: #4CAF50;
-            color: white;
+            background: linear-gradient(45deg, #0D1B2A, #1B263B, #415A77); /* Cosmic gradient */
+            color: #e0e0e0;
             text-align: center;
-            padding: 15px 0;
+            padding: 30px 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
         }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        /* Navigation Styles */
         nav {
-            margin: 0;
-            padding: 10px;
-            background-color: #333;
+            background-color: #1B263B; /* Dark cosmic blue */
+            display: flex;
+            justify-content: center;
+            padding: 8px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: #e0e0e0;
             text-decoration: none;
+            margin: 0 10px;
             font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: #7A9E9F;
         }
+
+        /* Section Styles */
         section {
-            padding: 20px;
+            padding: 30px 15px;
             max-width: 900px;
-            margin: 0 auto;
+            margin: 15px auto;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
         }
-        h2 {
-            color: #4CAF50;
+        section h2 {
+            font-size: 1.8rem;
+            color: #A9BCD0;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #7A9E9F;
+            display: inline-block;
+            padding-bottom: 3px;
         }
-        ul {
-            list-style-type: square;
+        section ul {
+            list-style: disc inside;
+            margin-top: 10px;
         }
+        section p {
+            margin-top: 8px;
+        }
+
+        /* Contact Section Styles */
+        #contact p {
+            font-size: 1rem;
+        }
+        #contact strong {
+            color: #A9BCD0;
+        }
+
+        /* Footer Styles */
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #1B263B;
+            color: #e0e0e0;
             text-align: center;
             padding: 10px 0;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            width: 100%;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            header p {
+                font-size: 0.9rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Malik Hashim Khan</h1>
+    <h1>Malik H Khan</h1>
     <p>Customer Service | IT Support | Security | Operations</p>
 </header>
 
@@ -69,7 +138,7 @@
 
 <section id="about">
     <h2>About Me</h2>
-    <p>Welcome to my personal website! I am a passionate professional with a background in customer service, IT support, and IT Operations. I have experience working in couple of other roles, including front desk reception in hospitality and customer service. I’m committed to continuous growth and thrive in dynamic environments that have inspiring teams.</p>
+    <p>Welcome to my personal website! I am a passionate professional with a background in customer service, IT support, and IT operations. I have experience working in a couple of other roles, including front desk reception in hospitality and customer service. I’m committed to continuous growth and thrive in dynamic environments that have inspiring teams.</p>
 </section>
 
 <section id="experience">
@@ -80,7 +149,7 @@
         <li><strong>Monash University</strong> - IT Support Specialist</li>
         <li><strong>Social Garden</strong> - IT Officer / IAM Administrator</li>
     </ul>
-    <p>I am currently available for positions in ICT Support, Cloud Analyst, and Security roles, including opportunities at <strong>Nvidia, AWS, Tesla,</strong> and, <strong> Google</strong>.</p>
+    <p>I am currently available for positions in ICT Support, Cloud Analyst, and Security roles, including opportunities at <strong>Nvidia, AWS, Tesla,</strong> and <strong>Google</strong>.</p>
 </section>
 
 <section id="volunteering">
@@ -95,10 +164,6 @@
     <h2>Contact Me</h2>
     <p>If you'd like to get in touch, please feel free to email me at: <strong>malikhashim.khan25@gmail.com</strong></p>
 </section>
-
-<footer>
-    <p>Copyright © 2024 Malik H Khan. All Rights Reserved.</p>
-</footer>
 
 </body>
 </html>
